@@ -3,8 +3,8 @@ import PropTypes from 'prop-types';
 
 class ProgressBar extends React.Component {
   getColor = (percent) => {
-    if (this.props.percent === 100) return 'green';
-    return this.props.percent > 50 ? 'lightgreen' : 'red';
+    if (percent === 100) return 'green';
+    return percent > 50 ? 'lightgreen' : 'red';
   }
 
   getWidthAsPercentOfTotalWidth = () => {
